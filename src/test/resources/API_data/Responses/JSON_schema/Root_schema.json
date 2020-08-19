@@ -1,0 +1,33 @@
+{
+  "required": [
+    "people",
+    "planets",
+    "films",
+    "species",
+    "vehicles",
+    "starships"
+  ],
+  "properties": {
+    "people": {
+      "type": "string"
+    },
+    "planets": {
+      "type": "string"
+    },
+    "films": {
+      "type": "string"
+    },
+    "species": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "string"
+    },
+    "starships": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

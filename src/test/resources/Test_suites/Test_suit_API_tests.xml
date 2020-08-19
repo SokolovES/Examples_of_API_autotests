@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="The Star Wars API. Examples of API tests" parallel="classes" thread-count="4">
+    <test name="API_tests">
+        <classes>
+            <class name="API_tests.Positive_API_tests.PositiveAPITests"/>
+            <class name="API_tests.Negative_API_tests.NegativeAPITests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.8.1"
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:7.1.0'
+    compile 'io.rest-assured:rest-assured:4.3.1'
+    compile 'io.rest-assured:json-schema-validator:4.3.1'
+    compile 'org.slf4j:slf4j-simple:1.7.30'
+}
+
+apply plugin: 'io.qameta.allure'
+
+allure {
+    version = '2.13.5'
+    autoconfigure = true
+    aspectjweaver = false
+    allureJavaVersion = '2.13.5'
+}
+
+task API_Tests(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/Test_suites/Test_suit_API_tests.xml'
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+}

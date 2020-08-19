@@ -1,0 +1,103 @@
+{
+  "required": [
+    "count",
+    "next",
+    "previous",
+    "results"
+  ],
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "next": {
+      "type": "null"
+    },
+    "previous": {
+      "type": "null"
+    },
+    "results": {
+      "items": {
+        "required": [
+          "title",
+          "episode_id",
+          "opening_crawl",
+          "director",
+          "producer",
+          "release_date",
+          "characters",
+          "planets",
+          "starships",
+          "vehicles",
+          "species",
+          "created",
+          "edited",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "episode_id": {
+            "type": "integer"
+          },
+          "opening_crawl": {
+            "type": "string"
+          },
+          "director": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "release_date": {
+            "type": "string"
+          },
+          "characters": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "planets": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "starships": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "vehicles": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "species": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "created": {
+            "type": "string"
+          },
+          "edited": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
