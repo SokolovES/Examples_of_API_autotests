@@ -32,6 +32,7 @@ allure {
 }
 
 task API_Tests(type: Test) {
+    ignoreFailures Boolean.getBoolean("test.ignoreFailures")
     useTestNG {
         suites 'src/test/resources/Test_suites/Test_suit_API_tests.xml'
     }
