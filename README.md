@@ -16,7 +16,7 @@ For negative scenario API's tests acceptance requirements:
 
 For run API's tests:
 
-1. Open http://jenkins.servehttp.com:8181/ 
+1. Open http://jenkins.servehttp.com:8181/ (temporary isn't working)
 2. Run a job "Star_Wars_API_tests".
 3. For looking at the test report click to Allure Report.
 
